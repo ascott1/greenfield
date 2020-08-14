@@ -1,0 +1,32 @@
+{
+  "name": "greenfield",
+  "version": "0.0.0",
+  "repository": "https://github.com/ascott1/greenfield.git",
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "tech@cfpb.gov",
+    "url": "https://cfpb.github.io/"
+  },
+  "license": "SEE LICENSE IN TERMS.md",
+  "private": "true",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "docs": "docsify serve docs",
+    "cypress:open": "cypress open",
+    "test:jest": "jest --verbose ./test/jest",
+    "test:cypress": "cypress run",
+    "test": "yarn run test:jest && yarn run test:cypress"
+  },
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "docsify-cli": "4.4.1",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.0",
+    "prettier": "2.0.5"
+  }
+}
