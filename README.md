@@ -3,7 +3,7 @@
 > A starter project for creating public domain products
 
 This is a thought experiment in how we might structure a boilerplate repo
-for new open source product development. **Status**: Alpha. Not to be used for production.
+for new open source product development. **Status:** Alpha. Not to be used for production.
 
 Features:
 
@@ -11,42 +11,46 @@ Features:
 - Configuration-free build process, local dev server, auto-refresh, and more with [Parcel](https://parceljs.org)
 - Unit and integration test setup with [Jest](https://jestjs.io) and [Cypress](https://www.cypress.io)
 - Linting with [ESLint](https://eslint.org)
-- Automatic code formatting with [Prettier](https://prettier.io/)
+- Automatic code formatting with [Prettier](https://prettier.io)
 - Easy documentation site generation with [Docsify](https://docsify.js.org)
 
 ## Installation
 
-```
+```sh
 yarn
 ```
 
-## Generating Documentation
+## Generating documentation
 
 To create the documentation site, add content to the `/docs/README.md` file. Additional pages
 can be added by creating additional `.md` files in the `docs` directory.
 
-To deploy the documentation as a GitHub pages site, select master branch `/docs` folder as the Github Pages source in the repositories' settings page.
+To deploy the documentation as a GitHub pages site, select the master branch's `/docs` folder as the Github Pages source in the repository's settings page.
 
-Example: https://github.com/ascott1/greenfield
+Example: https://ascott1.github.io/greenfield/
 
 ## Tests
 
 For unit tests with Jest:
 
-```
-yarn run test:jest
+```sh
+yarn test:jest
 ```
 
-For functional/integration tests with Cypress, make sure you have a local development server running at http://localhost:1234 and run:
+For functional/integration tests with Cypress:
 
-```
-yarn run test:cypress
+```sh
+# start up local development server
+yarn dev
+
+# run the cypress tests
+yarn test:cypress
 ```
 
 To run all tests:
 
-```
-yarn run test
+```sh
+yarn test
 ```
 
 ## Open source licensing info
